@@ -21,6 +21,7 @@ $reflectionMethod = $reflectionClass->getMethod('metodoProtegido');
 $reflectionMethod->setAccessible(true);
 var_dump($reflectionMethod->invoke($reflectionClass->newInstanceWithoutConstructor()));
 
+// Outros exemplos
 /*$parameters = array_filter(
     $reflectionMethod->getParameters(),
     fn (ReflectionParameter $parameter) => !$parameter->isOptional()
